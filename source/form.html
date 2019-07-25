@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>photo</title>
+  <title>form</title>
 </head>
 <body>
 
 <main>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <form class="form" action="https://echo.htmlacademy.ru" method="post">
     <section>
-      <h1 class="form_title"><b>ОСТАВЬТЕ СВОЙ ОТЗЫВ</b></h1>
-      <h3 class="form_message">
+      <h1  class="form__section_header"><b>ОСТАВЬТЕ СВОЙ ОТЗЫВ</b></h1>
+      <h3 class="form__message">
         ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ<br>ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О<br>ПОСЕЩЕННЫХ ВАМИ<br>ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
       </h3>
     </section>
     <section>
 
-      <h1><b>ПРЕДСТАВЬТЕСЬ:</b></h1>
+      <h1 class="form__section_header"><b>ПРЕДСТАВЬТЕСЬ:</b></h1>
 
-      <div>
+      <div class="form__name_item">
         <label for="tf_name">ИМЯ*:</label>
         <input width="100%" type="text" id="tf_name" name="tf_name" required
                minlength="1" maxlength="10">
       </div>
-      <div>
+      <div class="form__name_item">
         <label for="tf_surname">ФАМИЛИЯ*:</label>
         <input width="100%" type="text" id="tf_surname" name="tf_surname" required
                minlength="1" maxlength="20">
       </div>
-      <div>
+      <div class="form__name_item">
         <label for="tf_patron">ОТЧЕСТВО:</label>
         <input width="100%" type="text" id="tf_patron" name="tf_patron"
                minlength="1" maxlength="20">
@@ -36,8 +36,8 @@
 
     </section>
     <section>
-      <h1><b>КОНТАКТНАЯ ИНФОРМАЦИЯ:</b></h1>
-      <div>
+      <h1 class="form__section_header"><b>КОНТАКТНАЯ ИНФОРМАЦИЯ:</b></h1>
+      <div class="form__contact_item">
         <label for="tf_phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
         <br>
         <input width="100%" type="text" id="tf_phone" name="tf_phone" required
@@ -45,7 +45,7 @@
         <img src="http://placehold.it/57x57">
 
       </div>
-      <div>
+      <div class="form__contact_item">
         <label for="tf_email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
         <br>
         <input width="100%" type="text" id="tf_email" name="tf_email" required
@@ -55,18 +55,18 @@
       </div>
     </section>
     <section>
-      <h1><b>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</b></h1>
-      <div>
+      <h1 class="form__section_header"><b>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</b></h1>
+      <div class="form__impression_item">
         <input type="radio" id="impression_1"
                name="impression" value="1">
         <label for="impression_1">Скорее положительное</label>
       </div>
-      <div>
+      <div class="form__impression_item">
         <input type="radio" id="impression_2"
                name="impression" value="2">
         <label for="impression_2">Скорее отрицательное</label>
       </div>
-      <div>
+      <div class="form__impression_item">
         <input type="radio" id="impression_3"
                name="impression" value="3">
         <label for="impression_3">Затрудняюсь ответить</label>
@@ -74,32 +74,33 @@
 
     </section>
     <section>
-      <h1><b>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</b></h1>
-      <div>
+      <h1 class="form__section_header"><b>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</b></h1>
+      <div class="form__sight_item">
         <input type="checkbox" id="sight_1" name="sight_1" checked>
         <label for="sight_1">Мост Дьявола</label>
       </div>
-      <div>
+      <div class="form__sight_item">
         <input type="checkbox" id="sight_2" name="sight_2" checked>
         <label for="sight_2">Гора-Колокол</label>
       </div>
-      <div>
+      <div class="form__sight_item">
         <input type="checkbox" id="sight_3" name="sight_3" checked>
         <label for="sight_3">Слайд-парк</label>
       </div>
-      <div>
+      <div class="form__sight_item">
         <input type="checkbox" id="sight_4" name="sight_4">
         <label for="sight_4">Красные скалы</label>
       </div>
 
     </section>
     <section>
-      <h1><b>ОПИШИТЕ СВОИ ЭМОЦИИ:</b></h1>
-      <p>
-        <input height="160" type="text" id="tf_feelings" name="tf_feelings">
-      </p>
-      <input type="submit" id="btn_submit" value="ОТПРАВИТЬ ОТЗЫВ">
-
+      <h1 class="form__section_header"><b>ОПИШИТЕ СВОИ ЭМОЦИИ:</b></h1>
+      <div class="form__feeling_item">
+        <p>
+          <input height="160" type="text" id="tf_feelings" name="tf_feelings">
+        </p>
+        <input type="submit" id="btn_submit" value="ОТПРАВИТЬ ОТЗЫВ">
+      </div>
 
     </section>
   </form>
