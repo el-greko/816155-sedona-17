@@ -8,93 +8,96 @@
 
 <main>
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <section>
-      <h1  class="form__section_header"><b>ОСТАВЬТЕ СВОЙ ОТЗЫВ</b></h1>
-      <h3 class="form__message">
-        ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ<br>ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О<br>ПОСЕЩЕННЫХ ВАМИ<br>ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
+    <div>
+      <h1 class="section_header"><b>ОСТАВЬТЕ СВОЙ ОТЗЫВ</b></h1>
+      <h3 class="start_message">
+        ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
       </h3>
-    </section>
-    <section>
+    </div>
+    <div>
 
-      <h1 class="form__section_header"><b>ПРЕДСТАВЬТЕСЬ:</b></h1>
+      <h2 class="section_header"><b>ПРЕДСТАВЬТЕСЬ:</b></h2>
 
-      <div class="form__name_item">
-        <label for="tf_name">ИМЯ*:</label>
-        <input width="100%" type="text" id="tf_name" name="tf_name" required minlength="1" maxlength="10">
+      <div class="form_item">
+        <label for="name">ИМЯ*:</label>
+        <input width="100%" type="text" id="name" name="name" required>
       </div>
-      <div class="form__name_item">
-        <label for="tf_surname">ФАМИЛИЯ*:</label>
-        <input width="100%" type="text" id="tf_surname" name="tf_surname" required minlength="1" maxlength="20">
+      <div class="form_item">
+        <label for="surname">ФАМИЛИЯ*:</label>
+        <input width="100%" type="text" id="surname" name="surname" required>
       </div>
-      <div class="form__name_item">
-        <label for="tf_patron">ОТЧЕСТВО:</label>
-        <input width="100%" type="text" id="tf_patron" name="tf_patron" minlength="1" maxlength="20">
+      <div class="form_item">
+        <label for="patron">ОТЧЕСТВО:</label>
+        <input width="100%" type="text" id="patron" name="patron">
       </div>
 
-    </section>
-    <section>
-      <h1 class="form__section_header"><b>КОНТАКТНАЯ ИНФОРМАЦИЯ:</b></h1>
-      <div class="form__contact_item">
-        <label for="tf_phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-        <br>
-        <input width="100%" type="text" id="tf_phone" name="tf_phone" required minlength="1" maxlength="20">
-        <img src="http://placehold.it/57x57">
+    </div>
+    <div>
+      <h2 class="section_header"><b>КОНТАКТНАЯ ИНФОРМАЦИЯ:</b></h2>
+      <div class="form_item form_item--contact">
+        <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
 
-      </div>
-      <div class="form__contact_item">
-        <label for="tf_email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-        <br>
-        <input width="100%" type="text" id="tf_email" name="tf_email" required minlength="1" maxlength="30">
-        <img src="http://placehold.it/57x57">
+        <input width="100%" type="tel" id="phone" name="phone" required>
+
 
       </div>
-    </section>
-    <section>
-      <h1 class="form__section_header"><b>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</b></h1>
-      <div class="form__impression_item">
-        <input type="radio" id="impression_1" name="impression" value="1">
+      <div class="form_item form_item--contact">
+        <label for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+
+        <input width="100%" type="text" id="email" name="email" required>
+
+
+      </div>
+    </div>
+    <div>
+      <h2 class="section_header"><b>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</b></h2>
+      <div class="form_item form_item--impression">
+        <input type="radio" id="impression_1"
+               name="impression" value="1">
         <label for="impression_1">Скорее положительное</label>
       </div>
-      <div class="form__impression_item">
-        <input type="radio" id="impression_2" name="impression" value="2">
+      <div class="form_item form_item--impression">
+        <input type="radio" id="impression_2"
+               name="impression" value="2">
         <label for="impression_2">Скорее отрицательное</label>
       </div>
-      <div class="form__impression_item">
-        <input type="radio" id="impression_3" name="impression" value="3">
+      <div class="form_item form_item--impression">
+        <input type="radio" id="impression_3"
+               name="impression" value="3">
         <label for="impression_3">Затрудняюсь ответить</label>
       </div>
 
-    </section>
-    <section>
-      <h1 class="form__section_header"><b>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</b></h1>
-      <div class="form__sight_item">
+    </div>
+    <div>
+      <h2 class="section_header"><b>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</b></h2>
+      <div class="form_item form_item--sight">
         <input type="checkbox" id="sight_1" name="sight_1" checked>
         <label for="sight_1">Мост Дьявола</label>
       </div>
-      <div class="form__sight_item">
+      <div class="form_item form_item--sight">
         <input type="checkbox" id="sight_2" name="sight_2" checked>
         <label for="sight_2">Гора-Колокол</label>
       </div>
-      <div class="form__sight_item">
+      <div class="form_item form_item--sight">
         <input type="checkbox" id="sight_3" name="sight_3" checked>
         <label for="sight_3">Слайд-парк</label>
       </div>
-      <div class="form__sight_item">
+      <div class="form_item form_item--sight">
         <input type="checkbox" id="sight_4" name="sight_4">
         <label for="sight_4">Красные скалы</label>
       </div>
 
-    </section>
-    <section>
-      <h1 class="form__section_header"><b>ОПИШИТЕ СВОИ ЭМОЦИИ:</b></h1>
-      <div class="form__feeling_item">
-        <p>
-          <input height="160" type="text" id="tf_feelings" name="tf_feelings">
-        </p>
-        <input type="submit" id="btn_submit" value="ОТПРАВИТЬ ОТЗЫВ">
-      </div>
+    </div>
+    <div>
+      <h2 class="section_header"><b>ОПИШИТЕ СВОИ ЭМОЦИИ:</b></h2>
 
-    </section>
+
+      <input type="text" id="feelings" name="feelings">
+
+      <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+
+
+    </div>
   </form>
 </main>
 </body>
