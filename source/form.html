@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>form</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -43,8 +44,8 @@
       </div>
       <div class="form__item form__item--vertical">
         <label class="form__label form__label--uppcs" for="email">Электронная почта*:</label>
+        <input class="form__input form__input--email" type="email" id="email" name="email" required>
 
-        <input class="form__input form__input--email" type="text" id="email" name="email" required>
 
 
       </div>
@@ -89,9 +90,9 @@
       <h2 class="title">Опишите свои эмоции:</h2>
 
 
-      <textarea class="textarea" id="feelings" name="feelings"></textarea>
+      <textarea placeholder="Опишите подробно все свои восторги" class="textarea" id="feelings" name="feelings"></textarea>
 
-      <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+      <button type="submit">Отправить отзыв</button>
 
 
     </div>
