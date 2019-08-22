@@ -20,47 +20,58 @@
       <h2 class="title">Представьтесь:</h2>
 
       <div class="form__item">
-        <label  class="form__label form__label--uppcs" for="name">Имя*:</label>
-        <input class="form__input"  width="100%" type="text" id="name" name="name" required>
+        <label class="form__label form__label--uppcs" for="name">Имя*:</label>
+
+        <input class="form__input" type="text" id="name" name="name" required>
+
       </div>
       <div class="form__item">
         <label class="form__label form__label--uppcs" for="surname">Фамилия*:</label>
-        <input class="form__input" width="100%" type="text" id="surname" name="surname" required>
+
+        <input class="form__input" type="text" id="surname" name="surname" required>
+
       </div>
       <div class="form__item">
         <label class="form__label form__label--uppcs" for="patron">Отчество:</label>
-        <input class="form__input" width="100%" type="text" id="patron" name="patron">
+
+        <input class="form__input" type="text" id="patron" name="patron">
+
       </div>
 
     </div>
     <div>
       <h2 class="title">Контактная информация:</h2>
       <div class="form__item form__item--vertical">
-        <label  class="form__label form__label--uppcs" for="phone">Контактный телефон*:</label>
-
-        <input class="form__input form__input--phone" type="tel" id="phone" name="phone" required>
-
+        <label class="form__label form__label--uppcs" for="phone">Контактный телефон*:</label>
+        <div class="form__contacts-wrapper">
+          <input class="form__input form__input--phone" type="tel" id="phone" name="phone" required>
+          <div class="form__phone-icon"></div>
+        </p>
 
       </div>
-      <div class="form__item form__item--vertical">
-        <label class="form__label form__label--uppcs" for="email">Электронная почта*:</label>
-        <input class="form__input form__input--email" type="email" id="email" name="email" required>
+        <div class="form__item form__item--vertical">
+          <label class="form__label form__label--uppcs" for="phone">Электронная почта*:</label>
+          <div class="form__contacts-wrapper">
+            <input class="form__input form__input--email" type="email" id="email" name="email" required>
+            <div class="form__email-icon"></div>
+            </p>
 
+          </div>
 
 
       </div>
     </div>
     <div>
       <h2 class="title">Ваше общее впечатление:</h2>
-      <div class="form__item">
+      <div class="form__item form__item--radio">
         <input class="form__radio" type="radio" id="impression_1" name="impression" value="1">
         <label class="form__label" for="impression_1">Скорее положительное</label>
       </div>
-      <div class="form__item">
+      <div class="form__item form__item--radio">
         <input class="form__radio" type="radio" id="impression_2" name="impression" value="2">
         <label class="form__label" for="impression_2">Скорее отрицательное</label>
       </div>
-      <div class="form__item">
+      <div class="form__item form__item--radio">
         <input class="form__radio" type="radio" id="impression_3" name="impression" value="3">
         <label class="form__label" for="impression_3">Затрудняюсь ответить</label>
       </div>
@@ -68,19 +79,19 @@
     </div>
     <div>
       <h2 class="title">Посещенные достопримечательности:</h2>
-      <div class="form__item">
+      <div class="form__item form__item--chbox">
         <input class="form__checkbox" type="checkbox" id="sight_1" name="sight_1" checked>
         <label class="form__label form__label--bold" for="sight_1">Мост Дьявола</label>
       </div>
-      <div class="form__item">
+      <div class="form__item form__item--chbox">
         <input class="form__checkbox" type="checkbox" id="sight_2" name="sight_2" checked>
         <label class="form__label form__label--bold" for="sight_2">Гора-Колокол</label>
       </div>
-      <div class="form__item">
+      <div class="form__item form__item--chbox">
         <input class="form__checkbox" type="checkbox" id="sight_3" name="sight_3" checked>
         <label class="form__label form__label--bold" for="sight_3">Слайд-парк</label>
       </div>
-      <div class="form__item">
+      <div class="form__item form__item--chbox">
         <input class="form__checkbox" type="checkbox" id="sight_4" name="sight_4">
         <label class="form__label form__label--bold" for="sight_4">Красные скалы</label>
       </div>
@@ -90,9 +101,10 @@
       <h2 class="title">Опишите свои эмоции:</h2>
 
 
-      <textarea placeholder="Опишите подробно все свои восторги" class="textarea" id="feelings" name="feelings"></textarea>
+      <textarea placeholder="Опишите подробно все свои восторги" class="textarea" id="feelings"
+                name="feelings"></textarea>
 
-      <button type="submit">Отправить отзыв</button>
+      <button class="form__btn-submit" type="submit">Отправить отзыв</button>
 
 
     </div>
